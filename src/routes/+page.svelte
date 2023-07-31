@@ -10,19 +10,19 @@
 
                     <div class = "topnav">  
 
-                         <a href="/"><img class = "logo" src = "\images\travellogo.webp" alt = "logo"></a>
+                         <a href="/"><img class = "logo" src = "/images/travellogo.webp" alt = "logo"></a>
                     </div>
                                 <div class = "topnavend">
                                     <ul>
-                                        <li class = "social1"><a href="/"><img class = "socialpics" src = "\images\facebook.png" alt = "facebook"></a></li>
-                                        <li class = "social2"><a href="/"><img class = "socialpics" src = "\images\twitter.png" alt = "twitter"></a></li>
-                                        <li class = "search"><a href="/"><img class = "socialpics" src = "\images\search.png" alt = "search"></a></li>
+                                        <a href="https://facebook.com"><img class = "socialpics" src = "/images/facebook.png" alt = "facebook"></a>
+                                        <a href="https://twitter.com"><img class = "socialpics" src = "/images/twitter.png" alt = "twitter"></a>
+                                        <a href="/"><img class = "socialpics" src="/images/search.png" alt="search"></a>
                                     </ul>
                                 </div>
             </div>
                                     
                     <div class = "topright">
-                             <a href= "/" class = "sub">Subscribe (Free)</a>
+                             <a href= "/" class = "sub">Subscribe Free</a>
                     </div>
 
                     <div class="ham" onclick="toggleClass()">
