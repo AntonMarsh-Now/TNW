@@ -1,6 +1,6 @@
 * { 
-    margin : 5px 15px;
-    padding: 0px;
+    margin : 0px 15px;
+    padding-top: 0px;
 }
 
 .body{
@@ -9,10 +9,15 @@
 
 .logo{
     height: 60px;
+    padding-top: 10px;
 }
+
+
 
 .socialpics{
     height:20px;
+    padding:8px;
+    border-radius: 14px;
     
 }
 
@@ -80,8 +85,8 @@ align-self: center;
 .topright{
     display: flex;
     justify-content: space-between;
-    width: 10%;
-    margin: 0px;
+    width: 9%;
+    margin:0px;
     height: 80px;
     background-color: #c8221d;
     font-size: 14px;
@@ -94,9 +99,7 @@ align-self: center;
     border: 0px;
 }
 
-.navit a:active{
-    background-color: #c8221d;
-}
+
 .navbar ul{
     list-style: none;
     display: flex;
@@ -142,7 +145,9 @@ align-self: center;
     margin-top: 0px;
     box-shadow: 1px 1px 4px 1px gray;
     height:40px;
+    width: 93.1%;
 }
+
 
 
 .navbar ul li:hover {
@@ -153,6 +158,12 @@ align-self: center;
  }
 }
 
+.header{
+    position:fixed;
+    width:100%;
+    background-color: white;
+    padding-top: 0px;
+}
 
 
 @media only screen and (max-width: 700px){
@@ -161,12 +172,13 @@ align-self: center;
     margin:2px;
 }
 
+
 .logo{
     height: 50px;
 }
 
 .socialpics{
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .search{

@@ -10,13 +10,13 @@
 
                     <div class = "topnav">  
 
-                         <a href="/"><img class = "logo" src = "\images\travellogo.webp" alt = "logo"></a>
+                         <a href="/"><img class = "logo" src = "/images/travellogo.webp" alt = "logo"></a>
                     </div>
                                 <div class = "topnavend">
                                     <ul>
-                                        <li class = "social1"><a href="/"><img class = "socialpics" src = "\images\facebook.png" alt = "facebook"></a></li>
-                                        <li class = "social2"><a href="/"><img class = "socialpics" src = "\images\twitter.png" alt = "twitter"></a></li>
-                                        <li class = "search"><a href="/"><img class = "socialpics" src = "\images\search.png" alt = "search"></a></li>
+                                        <li class = "social1"><a href="/"><img class = "socialpics" src = "/images/facebook.png" alt = "facebook"></a></li>
+                                        <li class = "social2"><a href="/"><img class = "socialpics" src = "/images/twitter.png" alt = "twitter"></a></li>
+                                        <li class = "search"><a href="/"><img class = "socialpics" src = "/images/search.png" alt = "search"></a></li>
                                     </ul>
                                 </div>
             </div>
