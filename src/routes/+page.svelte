@@ -48,16 +48,15 @@
     <div class ="topcontainer">
         
         <div id="leaderboard" class="col-16">
-            <div class="region region-leaderboard d-flex flex-wrap justify-content-center justify-content-xxl-between">
+            <div class="region region-leaderboard d-flex flex-wrap justify-content-center">
       <div class="revive-item"><div id="block-ftra-advertisement-leaderboard" class="block block-ftra-advertisement">
   
       
     <div class="content">
-      <ins data-revive-id="5aab8581fc0b61410f72c153e0e71db5" data-revive-zoneid="559" data-revive-seq="0" id="revive-0-0" data-revive-loaded="1" style="text-decoration: none;"><a href="https://nmas.nowmedia.co.za/www/delivery/cl.php?bannerid=20998&amp;zoneid=559&amp;sig=2ebb840f7bb82c0da13d6343fd6ddb6dd9ecbbd7b9a8f44522dbdf3df270e168&amp;oadest=https%3A%2F%2Fwww.travelinfo.co.za%2Fworkshops" target="_blank"><img src="https://nmas.nowmedia.co.za//www/images/aae1c3e74de764021dc1ac8498ed149d.jpg" width="728" height="90" alt="" title="" border="0"></a><div id="beacon_efe69057f2" style="position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="https://nmas.nowmedia.co.za/www/delivery/lg.php?bannerid=20998&amp;campaignid=18057&amp;zoneid=559&amp;loc=https%3A%2F%2Fwww.travelnews.co.za%2F&amp;referer=https%3A%2F%2Fwww.google.com%2F&amp;cb=efe69057f2" width="0" height="0" alt="" style="width: 0px; height: 0px;"></div></ins></div>
+      <ins data-revive-id="5aab8581fc0b61410f72c153e0e71db5" data-revive-zoneid="559" data-revive-seq="0" id="revive-0-0" data-revive-loaded="1" style="text-decoration: none;"><a href="https://nmas.nowmedia.co.za/www/delivery/cl.php?bannerid=21371&amp;zoneid=559&amp;sig=970d34e7c9e78c79ac31fb62b330b13be2a3f756a57740c9bcd46f437a229a00&amp;oadest=https%3A%2F%2Fwww.flyairlink.com%2Fen-za%2Fflights-to-malawi%3Futm_source%3DTNW%26utm_medium%3Ddisplay%26utm_campaign%3DTNW%2BAug%2B2023%2B-%2BMalawi" target="_blank"><img src="https://nmas.nowmedia.co.za//www/images/ec7ea082b42b99a88a54358f4db16b69.gif" width="728" height="90" alt="" title="" border="0"></a><div id="beacon_dcea094fab" style="position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="https://nmas.nowmedia.co.za/www/delivery/lg.php?bannerid=21371&amp;campaignid=18380&amp;zoneid=559&amp;loc=https%3A%2F%2Fwww.travelnews.co.za%2F&amp;referer=https%3A%2F%2Fwww.google.com%2F&amp;cb=dcea094fab" width="0" height="0" alt="" style="width: 0px; height: 0px;"></div></ins></div>
   </div>
   </div>  </div>
         </div>
-    
     </div>
 <div class = "main">
     <div class = "blogcontainer">
@@ -90,13 +89,13 @@
         
                 <div class = "flightfeature"><a href = "https://">Flight Centre Independent Feature August 2023</a></div>
             
-            <iframe class = "add4" src="" title = "add4" scrolling = "no"></iframe>
+            <iframe class = "add4" src="images/tn-flight-centre-independent-mini-branded-ftr-2-aug-2023-cover.png" title = "add4" scrolling = "no"></iframe>
         </div>
         
         <div class = "rightend">
-            <iframe class = "add5" src="" title = "add4" scrolling = "no"></iframe>
-            <iframe class = "add6" src="" title = "add6" scrolling = "no"></iframe>
-            <iframe class = "add7" src="" title = "add7" scrolling = "no"></iframe>     
+            <iframe class = "add5" src="https://nmas.nowmedia.co.za//www/images/c6c6031c3f890dfff3196b4bf03193b3.gif" title = "add4" scrolling = "no"></iframe>
+            <iframe class = "add6" src="https://nmas.nowmedia.co.za//www/images/b63f5a95a965a429999f87ee4afea613.jpg" title = "add6" scrolling = "no"></iframe>
+            <iframe class = "add7" src="https://nmas.nowmedia.co.za//www/images/d222b5b54b192349813e273160595df8.gif" title = "add7" scrolling = "no"></iframe>     
     </div>
 </div>
 
