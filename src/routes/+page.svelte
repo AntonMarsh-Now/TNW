@@ -1,27 +1,28 @@
+
 <title>Travel News</title>
 
 <body class="body">
     
 <link rel="stylesheet" type= "text/css" href="style.css">
-<header class="header">  
-    <div class = "maintop">
-            <div class = "top">
+<header id="header">  
+    <div id = "maintop">
+            <div id = "top">
 
-                    <div class = "topnav">  
+                    <div id = "topnav">  
 
-                         <a href="/"><img class = "logo" src = "/images/travellogo.webp" alt = "logo"></a>
+                         <a href="/"><img id = "logo" src = "/images/travellogo.webp" alt = "logo"></a>
                     </div>
-                                <div class = "topnavend">
+                                <div id = "topnavend">
                                     <ul>
-                                        <a href="https://facebook.com"><img class = "socialpics" src = "/images/facebook.png" alt = "facebook"></a>
-                                        <a href="https://twitter.com"><img class = "socialpics" src = "/images/twitter.png" alt = "twitter"></a>
-                                        <a href="/"><img class = "socialpics" src="/images/search.png" alt="search"></a>
+                                        <a href="https://facebook.com"><img id = "socialpics" src = "/images/facebook.png" alt = "facebook"></a>
+                                        <a href="https://twitter.com"><img id = "socialpics" src = "/images/twitter.png" alt = "twitter"></a>
+                                        <a href="/"><img id = "socialpics" src="/images/search.png" alt="search"></a>
                                     </ul>
                                 </div>
             </div>
                                     
-                    <div class = "topright">
-                             <a href= "/" class = "sub">Subscribe Free</a>
+                    <div id = "topright">
+                             <a href= "/" id = "sub">Subscribe Free</a>
                     </div>
 
                     <div class="ham" onclick="toggleClass()">
@@ -29,44 +30,54 @@
                     </div>
      </div>
 
-        <div class="bottom">
-                 <nav class="navbar">
+        <div id="bottom">
+                 <nav id="navbar">
                         <ul>
-                                <li class = "navit"><a href = "/" class="navitem">News</a></li>
-                                <li ><a href = "/features" class="navitem">Features</a></li>
-                                <li><a href = "/travelinfo" class="navitem">Travelinfo</a></li>
-                                <li><a href = "/columns" class="navitem">Columns</a></li>
-                                <li><a href = "/community" class="navitem">Community</a></li>
-                                <li><a href = "/sponsored" class="navitem">Sponsored</a></li>
-                                <li><a href = "/contact us" class="navitem">Contact Us</a></li>
+                                <li class = "navit"><a href = "/" id="navitem">News</a></li>
+                                <li ><a href = "/features" id="navitem">Features</a></li>
+                                <li><a href = "/travelinfo" id="navitem">Travelinfo</a></li>
+                                <li><a href = "/columns" id="navitem">Columns</a></li>
+                                <li><a href = "/community" id="navitem">Community</a></li>
+                                <li><a href = "/sponsored" id="navitem">Sponsored</a></li>
+                                <li><a href = "/contact us" id="navitem">Contact Us</a></li>
                         </ul>
                  </nav>
         </div>
 </header>
 
     <div class ="topcontainer">
-        <div class = "topadd">
-            <iframe class = "blog" src = "" title = "blog"></iframe>
+        
+        <div id="leaderboard" class="col-16">
+            <div class="region region-leaderboard d-flex flex-wrap justify-content-center justify-content-xxl-between">
+      <div class="revive-item"><div id="block-ftra-advertisement-leaderboard" class="block block-ftra-advertisement">
+  
+      
+    <div class="content">
+      <ins data-revive-id="5aab8581fc0b61410f72c153e0e71db5" data-revive-zoneid="559" data-revive-seq="0" id="revive-0-0" data-revive-loaded="1" style="text-decoration: none;"><a href="https://nmas.nowmedia.co.za/www/delivery/cl.php?bannerid=20998&amp;zoneid=559&amp;sig=2ebb840f7bb82c0da13d6343fd6ddb6dd9ecbbd7b9a8f44522dbdf3df270e168&amp;oadest=https%3A%2F%2Fwww.travelinfo.co.za%2Fworkshops" target="_blank"><img src="https://nmas.nowmedia.co.za//www/images/aae1c3e74de764021dc1ac8498ed149d.jpg" width="728" height="90" alt="" title="" border="0"></a><div id="beacon_efe69057f2" style="position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="https://nmas.nowmedia.co.za/www/delivery/lg.php?bannerid=20998&amp;campaignid=18057&amp;zoneid=559&amp;loc=https%3A%2F%2Fwww.travelnews.co.za%2F&amp;referer=https%3A%2F%2Fwww.google.com%2F&amp;cb=efe69057f2" width="0" height="0" alt="" style="width: 0px; height: 0px;"></div></ins></div>
+  </div>
+  </div>  </div>
         </div>
+    
     </div>
 <div class = "main">
     <div class = "blogcontainer">
-        <iframe class = "blog" src = "" title = "blog"></iframe>
-                <iframe class = "blogadd" src = "" title = "blogadd" scrolling = "no"></iframe>
-        <iframe class = "blog" src = "" title = "blog"></iframe>
-        <iframe class = "blog" src = "" title = "blog"></iframe>
-        <iframe class = "blog" src = "" title = "blog"></iframe>
-        <iframe class = "blog" src = "" title = "blog"></iframe>
-        <iframe class = "blog" src = "" title = "blog"></iframe>
-        <iframe class = "blog" src = "" title = "blog"></iframe>
-                 <iframe class = "blogadd" src = "" title = "blogadd" scrolling = "no"></iframe>
-        <iframe class = "blog" src = "" title = "blog"></iframe>
-        <iframe class = "blog" src = "" title = "blog"></iframe>
-        <iframe class = "blog" src = "" title = "blog"></iframe>
-        <iframe class = "blog" src = "" title = "blog"></iframe>
-        <iframe class = "blog" src = "" title = "blog"></iframe>
-        <iframe class = "blog" src = "" title = "blog"></iframe>
-        <button class="loadmore">Loadmore</button>
+        <div class = "blog" src = "" ></div>
+                            <iframe class = "blogadd" src = "" title = "blogadd" scrolling = "no"></iframe>
+        <div class = "blog" src = "" ></div>
+        <div class = "blog" src = "" ></div>
+        <div class = "blog" src = "" ></div>
+        <div class = "blog" src = "" ></div>
+        <div class = "blog" src = "" ></div>
+        <div class = "blog" src = "" ></div>
+                             <iframe class = "blogadd" src = "" title = "blogadd" scrolling = "no"></iframe>
+        <div class = "blog" src = "" ></div>
+        <div class = "blog" src = "" ></div>
+        <div class = "blog" src = "" ></div>
+        <div class = "blog" src = "" ></div>
+        <div class = "blog" src = "" ></div>
+        <div class = "blog" src = "" ></div>
+
+                        <button class="loadmore">Loadmore</button>
 
     </div>
         
@@ -83,12 +94,37 @@
         </div>
         
         <div class = "rightend">
-            <iframe class = "add5" src="" title = "add4" scrolling = "no"></iframe>        </div>
+            <iframe class = "add5" src="" title = "add4" scrolling = "no"></iframe>
+            <iframe class = "add6" src="" title = "add6" scrolling = "no"></iframe>
+            <iframe class = "add7" src="" title = "add7" scrolling = "no"></iframe>     
+    </div>
+</div>
+
+    <div class = "footer">
+             <div class = "leftfoot">
+                <ul>
+                    <li><a href = "https://www.nowmedia.co.za">&#169 Now Media</a></li>
+                    <li><a href = "privacy policy/+page.svelte">Privacy Policy</a></li>
+                </ul>
+             </div>
+
+             <div class = "rightfoot">
+                <ul>
+                    <li><a href = "https://facebook.com" target = "blank"><img class = "footsocial" src = "/images/facebook.png" alt = "facebook"></a></li>
+                    <li><a href="https://twitter.com" target = "blank"><img class = "footsocial" src = "/images/twitter.png" alt = "twitter"></a></li>
+                    <li><a href="/" target = "blank"><img class = "footsocialwifi" src = "/images/wifi.png" alt = "rss"></li>
+                    <li><a href="/">Contact Us</a></li>
+                    <li><a href="/">About Us</a></li>
+                    <li><a href="/">Advertise</a></li>
+                    <li><a href="/">Send us News</a></li>
+                    <li><a href="/cms"> Admin Portal</a></li>
+                </ul>
+             </div>
+
     </div>
 
 
 <script src = "dropdown.js"></script>
-
 </body>
 
 <style>
@@ -109,14 +145,6 @@
     
     }
 
-    .topadd{
-        height:85px;
-        width:45em;
-        display:flex;
-        border: 0px solid black;
-        align-items: center;
-        justify-content: center;
-    }
 
     .blogcontainer{
         width:50%;
@@ -135,6 +163,7 @@
     .blog{
         height:87px;
         width:98%;
+        border: 1px solid black;
     }
 
     .blog:hover{
@@ -171,7 +200,22 @@
        overflow: hidden;
        aspect-ratio: auto 300/600;
    }
+
+   .add6{
+    margin-top: 5px;
+       width:300px ;
+       height:300px ;
+       overflow: hidden;
+       aspect-ratio: auto 300/600;
+   }
    
+   .add7{
+    margin-top: 5px;
+       width:300px ;
+       height:300px ;
+       overflow: hidden;
+       aspect-ratio: auto 300/600;
+   }
 
 
     
@@ -264,6 +308,88 @@
 
 .rightend{
     width:20%;
+}
+
+.footer{
+    display:flex;
+    background-color: #dee2e6;
+    justify-content: space-between;
+    list-style: none;
+   
+}
+
+.rightfoot ul{
+    display:flex;
+    text-decoration: none;
+    list-style: none;
+    font-size:12px;
+}
+
+
+.rightfoot ul li {
+    margin: 0px;
+    align-self: center;
+    padding:10px 0px;
+    border:0px;
+}
+.rightfoot ul li a {
+    text-decoration: none;
+    color:#00498f;
+    
+}
+
+
+.leftfoot{
+    align-self:center;
+}
+
+
+.leftfoot ul{
+    display:flex;
+    list-style: none;
+    margin: 0px;
+    font-size:12px;
+}
+
+.leftfoot ul li {
+    margin: 0px;
+    padding: 10px 0px;
+    
+}
+.leftfoot ul li a {
+    text-decoration: none;
+    color:#00498f;
+    
+}
+
+.leftfoot ul li:hover{
+    background-color: #90c2f1;
+    
+}
+
+.leftfoot ul li a:hover {
+    color:white;
+}
+
+.rightfoot ul li a:hover {
+    color:white;
+}
+.footsocialwifi{
+    height:14px;
+    margin: 0px;
+    border:0px;
+}
+
+.footsocial{
+    height:14px;
+    margin: 0px;
+    border:0px;
+    
+}
+
+.rightfoot ul li:hover {
+    background-color: #90c2f1;
+    color:white;
 }
 
 

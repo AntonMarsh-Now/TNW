@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+}
+
+.body{
+    background-color: rgb(86, 86, 86);
+}
+
+#logo {
+    height: 50px;
+}
+
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    box-shadow: 0px 1px 5px 0px ;
+    background-color: rgb(149, 149, 149);
+    
+}
+
+
+.navbar ul li {
+    align-self: center;
+    font-size: 30px;
+    font-weight: 600;
+    color:white;
+}
+
+.navbar ul .logocms {
+    color:#00498f;
+}
+
+

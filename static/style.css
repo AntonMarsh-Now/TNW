@@ -7,64 +7,64 @@
     font-family: "Gill Sans", sans-serif;
 }
 
-.logo{
+#logo{
     height: 60px;
     padding-top: 10px;
 }
 
 
 
-.socialpics{
+#socialpics{
     height:20px;
     padding:8px;
     border-radius: 14px;
     
 }
 
-.social1{
+#social1{
     margin:0px;
 }
 
-.social2{
+#social2{
     margin:0px;
 }
 
-.search{
+#search{
     margin:0px;
 }
 
-.search a{
+#search a{
     margin-right:0px;
 }
 
-.maintop{
+#maintop{
     display: flex;
    
 }
 
-.topnav{
+#topnav{
 display:flex;
 flex-direction: space-between;
 }
 
-.topnavend{
+#topnavend{
 
     justify-content: center;
     align-self: center;
 }
 
 
-.topnavend ul{
+#topnavend ul{
 display: flex ;
 margin: 0px;
 }
 
-.topnavend li{
+#topnavend li{
   list-style: none;
     }
     
 
-.top{
+#top{
     display: flex;
     justify-content: space-between;
     width: 85%;
@@ -73,7 +73,7 @@ margin: 0px;
     
 }
 
-.sub{ 
+#sub{ 
 text-align: center;
 color:white;
 text-decoration: none;
@@ -82,7 +82,7 @@ align-self: center;
 }
 
 
-.topright{
+#topright{
     display: flex;
     justify-content: space-between;
     width: 9%;
@@ -93,14 +93,14 @@ align-self: center;
 
 }
 
-.navbar{
+#navbar{
     margin: 0px;
     padding:0px;
     border: 0px;
 }
 
 
-.navbar ul{
+#navbar ul{
     list-style: none;
     display: flex;
     justify-content: space-evenly;
@@ -109,7 +109,7 @@ align-self: center;
 
 }
 
-.navbar ul li{
+#navbar ul li{
 
     
     background-color: none;
@@ -122,7 +122,7 @@ align-self: center;
     margin-right: 0px;;
 }
 
-.navitem{
+#navitem{
     text-decoration: none;
     color:#00498f;
     margin-top: 0px;
@@ -130,7 +130,7 @@ align-self: center;
 
 }
 
-.navit{
+#navit{
     align-items: center;
     background-color: none;
     margin-top: 0px;
@@ -139,7 +139,7 @@ align-self: center;
 }
 
 
-.bottom{
+#bottom{
     display: flex;
     margin-left: 0px;
     margin-top: 0px;
@@ -150,15 +150,15 @@ align-self: center;
 
 
 
-.navbar ul li:hover {
+#navbar ul li:hover {
  background-color:#c8221d;
 
- .navitem{
+ #navitem{
     color:white;
  }
 }
 
-.header{
+#header{
     position:fixed;
     width:100%;
     background-color: white;
