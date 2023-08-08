@@ -60,21 +60,77 @@
     </div>
 <div class = "main">
     <div class = "blogcontainer">
-        <div class = "blog" src = "" ></div>
+
+
+        <div class = "blog" >
+                    <div class = "blogpicture"><img class = "blogpics" src = "images/cathaypacific.png" alt = "blogpicture"></div>
+                     <div class = "bloginfo"></div>
+        </div>
+
+
                             <iframe class = "blogadd" src = "" title = "blogadd" scrolling = "no"></iframe>
-        <div class = "blog" src = "" ></div>
-        <div class = "blog" src = "" ></div>
-        <div class = "blog" src = "" ></div>
-        <div class = "blog" src = "" ></div>
-        <div class = "blog" src = "" ></div>
-        <div class = "blog" src = "" ></div>
+
+        <div class = "blog" >
+                    <div class = "blogpicture"></div>
+                    <div class = "bloginfo"></div>
+        </div>
+
+        <div class = "blog" >
+            <div class = "blogpicture"></div>
+            <div class = "bloginfo"></div>
+        </div>
+
+        <div class = "blog" >
+            <div class = "blogpicture"></div>
+            <div class = "bloginfo"></div>
+        </div>
+
+        <div class = "blog" >
+            <div class = "blogpicture"></div>
+            <div class = "bloginfo"></div>
+        </div>
+
+        <div class = "blog" >
+            <div class = "blogpicture"></div>
+            <div class = "bloginfo"></div>
+        </div>
+
+        <div class = "blog" >
+            <div class = "blogpicture"></div>
+            <div class = "bloginfo"></div>
+        </div>
+               
+
                              <iframe class = "blogadd" src = "" title = "blogadd" scrolling = "no"></iframe>
-        <div class = "blog" src = "" ></div>
-        <div class = "blog" src = "" ></div>
-        <div class = "blog" src = "" ></div>
-        <div class = "blog" src = "" ></div>
-        <div class = "blog" src = "" ></div>
-        <div class = "blog" src = "" ></div>
+        <div class = "blog" >
+            <div class = "blogpicture"></div>
+            <div class = "bloginfo"></div>
+        </div>
+
+        <div class = "blog" >
+            <div class = "blogpicture"></div>
+            <div class = "bloginfo"></div>
+        </div>
+
+        <div class = "blog" >
+            <div class = "blogpicture"></div>
+            <div class = "bloginfo"></div>
+        </div>
+
+        <div class = "blog" >
+            <div class = "blogpicture"></div>
+            <div class = "bloginfo"></div>
+        </div>
+        
+        <div class = "blog" >
+            <div class = "blogpicture"></div>
+            <div class = "bloginfo"></div>
+        </div>
+
+        <div class = "blog" >
+            <div class = "blogpicture"></div>
+            <div class = "bloginfo"></div>
+        </div>
 
                         <button class="loadmore">Loadmore</button>
 
@@ -160,9 +216,14 @@
 
 
     .blog{
+        display: flex;
         height:87px;
         width:98%;
-        border: 1px solid black;
+        border: 0px solid black;
+        margin: 1px;
+        border-radius: 10px;
+        background-color: #dee2e6;
+        
     }
 
     .blog:hover{
@@ -172,9 +233,7 @@
         width:555px;
         height:90px;
         margin:10px;
-        
         overflow: hidden;
-        
     }
 
     .blogadd:hover{
@@ -182,7 +241,46 @@
 
     }
 
+    .blogpicture{
+        background-color: rgb(196, 194, 194);
+        width: 20%;
+        border-radius: 10px;
+        margin: 0px;
+        overflow: hidden;
+    }
 
+.blogpics{
+    height:100%;
+    margin: 0px;
+    width: 100%;
+    
+}
+
+ .blogpicture .blogpics:hover{
+   transform: scale(1.1);
+   -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+
+ }
+
+.blogpics{
+    height:110%;
+    margin: 0px;
+    width: 110%;
+    
+}
+
+.bloginfo{
+    font-size: 15px;
+    height:85%;
+    width:80%;
+    margin: 0px;
+    border-radius: 10px;
+    align-self: center;
+
+}
     .add4{
         margin: 0px;
        margin-top: 10px;
