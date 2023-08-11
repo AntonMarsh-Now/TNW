@@ -61,11 +61,11 @@
 <div class = "main">
     <div class = "blogcontainer">
 
-
-        <div class = "blog" >
+       <div class = "blog" >
                     <div class = "blogpicture"><img class = "blogpics" src = "images/cathaypacific.png" alt = "blogpicture"></div>
                      <div class = "bloginfo"></div>
         </div>
+        
 
 
                             <iframe class = "blogadd" src = "" title = "blogadd" scrolling = "no"></iframe>
@@ -121,7 +121,7 @@
             <div class = "blogpicture"></div>
             <div class = "bloginfo"></div>
         </div>
-        
+
         <div class = "blog" >
             <div class = "blogpicture"></div>
             <div class = "bloginfo"></div>
@@ -172,7 +172,7 @@
                     <li><a href="/">About Us</a></li>
                     <li><a href="/">Advertise</a></li>
                     <li><a href="/">Send us News</a></li>
-                    <li><a href="/cms"> Admin Portal</a></li>
+                    <li><a href="https://tnw-cms.vercel.app/"> Admin Portal</a></li>
                 </ul>
              </div>
 
