@@ -30,6 +30,7 @@
 <title>Travel News</title>
 
 <body class="body">
+  <script src="BlogCard.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css" />
   <header id="header">
     <div id="maintop">
@@ -136,17 +137,22 @@
     </div>
   </div>
   <div class="main">
-    <div class="blogcontainer" />
-    {#if !loading}
-      {#each blogs as blog}
-        <div>{blog.title}</div>
-        <div>{blog.author}</div>
-        <div>{blog.category}</div>
-        <div>{blog.images}</div>
-      {/each}
-    {:else}
-      <div>loading</div>
-    {/if}
+    <div id="blogcontainer">
+      {#if !loading}
+        {#each blogs as blog}
+          <div id="blogs">
+            <div id="blogimagesblock">
+              <img id="image" src={blog.blog_bg} alt="img" />
+            </div>
+            <div id="content1">{blog.title}</div>
+            <div id="content2">{blog.author}</div>
+            <div id="content3">{blog.category}</div>
+          </div>
+        {/each}
+      {:else}
+        <div>loading</div>
+      {/if}
+    </div>
     <div class="rightside">
       <div class="featuresblock">
         <div class="features">Feature</div>
@@ -252,77 +258,63 @@
     justify-content: center;
   }
 
-  .blogcontainer {
-    width: 50%;
-    height: 1500px;
+  #blogs {
+    max-height: 100px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: none;
-    overflow: hidden;
-  }
-
-  .blog {
-    display: flex;
-    height: 87px;
-    width: 98%;
-    border: 0px solid black;
-    margin: 1px;
-    border-radius: 10px;
     background-color: #dee2e6;
-  }
-
-  .blog:hover {
-    background-color: rgb(237, 236, 236);
-  }
-  .blogadd {
-    width: 555px;
-    height: 90px;
+    padding: 0px;
     margin: 10px;
-    overflow: hidden;
-  }
-
-  .blogadd:hover {
-    width: 560px;
-  }
-
-  .blogpicture {
-    background-color: rgb(196, 194, 194);
-    width: 20%;
     border-radius: 10px;
-    margin: 0px;
-    overflow: hidden;
   }
 
-  .blogpics {
+  #blogs:hover {
+    background-color: rgb(157, 157, 157);
+  }
+
+  #blogright {
+    display: flex;
+    justify-items: end;
+    width: 30%;
+  }
+  #blogcontainer {
+    width: 50%;
+    height: 120px;
+  }
+
+  #image {
+    width: 100%;
     height: 100%;
     margin: 0px;
-    width: 100%;
+    padding: 0px;
+    border-radius: 10px;
+  }
+  #content1 {
+    width: 70%;
+    margin-top: 15px;
   }
 
-  .blogpicture .blogpics:hover {
+  #content2 {
+    width: 10%;
+    margin-top: 15px;
+  }
+
+  #content3 {
+    width: 10%;
+    margin-top: 15px;
+  }
+
+  #image:hover {
     transform: scale(1.1);
-    -webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
+    transition: transform 0.2s;
   }
-
-  .blogpics {
-    height: 110%;
-    margin: 0px;
-    width: 110%;
-  }
-
-  .bloginfo {
-    font-size: 15px;
-    height: 85%;
-    width: 80%;
+  #blogimagesblock {
+    width: 20%;
+    height: 100px;
+    overflow: hidden;
     margin: 0px;
     border-radius: 10px;
-    align-self: center;
   }
+
   .add4 {
     margin: 0px;
     margin-top: 10px;
