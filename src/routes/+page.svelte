@@ -138,7 +138,6 @@
   <div class="main">
     <div class="blogcontainer" />
     {#if !loading}
-      <div>{blogs[0].title}</div>
       {#each blogs as blog}
         <div>{blog.title}</div>
         <div>{blog.author}</div>
