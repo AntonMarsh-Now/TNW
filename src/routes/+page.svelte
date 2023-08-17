@@ -142,6 +142,8 @@
       {#each blogs as blog}
         <div>{blog.title}</div>
         <div>{blog.author}</div>
+        <div>{blog.category}</div>
+        <div>{blog.images}</div>
       {/each}
     {:else}
       <div>loading</div>
