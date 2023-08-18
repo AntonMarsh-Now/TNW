@@ -25,6 +25,29 @@
       loading = false;
     });
   });
+
+  let promotions = [];
+
+  const fetchPromotions = async () => {
+    try {
+      const { data, error } = await supabase.from("promotions").select("*");
+
+      if (error) {
+        throw new Error(error.message);
+      } else {
+        return data;
+      }
+    } catch (error) {
+      console.log("an enexpected error occured");
+    }
+  };
+
+  onMount(async () => {
+    await fetchPromotions().then((data) => {
+      promotions = data;
+      loading = false;
+    });
+  });
 </script>
 
 <title>Travel News</title>
@@ -88,53 +111,15 @@
   </header>
 
   <div class="topcontainer">
-    <div id="leaderboard" class="col-16">
-      <div
-        class="region region-leaderboard d-flex flex-wrap justify-content-center"
-      >
-        <div class="revive-item">
-          <div
-            id="block-ftra-advertisement-leaderboard"
-            class="block block-ftra-advertisement"
-          >
-            <div class="content">
-              <ins
-                data-revive-id="5aab8581fc0b61410f72c153e0e71db5"
-                data-revive-zoneid="559"
-                data-revive-seq="0"
-                id="revive-0-0"
-                data-revive-loaded="1"
-                style="text-decoration: none;"
-                ><a
-                  href="https://nmas.nowmedia.co.za/www/delivery/cl.php?bannerid=21371&amp;zoneid=559&amp;sig=970d34e7c9e78c79ac31fb62b330b13be2a3f756a57740c9bcd46f437a229a00&amp;oadest=https%3A%2F%2Fwww.flyairlink.com%2Fen-za%2Fflights-to-malawi%3Futm_source%3DTNW%26utm_medium%3Ddisplay%26utm_campaign%3DTNW%2BAug%2B2023%2B-%2BMalawi"
-                  target="_blank"
-                  ><img
-                    src="https://nmas.nowmedia.co.za//www/images/ec7ea082b42b99a88a54358f4db16b69.gif"
-                    width="728"
-                    height="90"
-                    alt=""
-                    title=""
-                    border="0"
-                  /></a
-                >
-                <div
-                  id="beacon_dcea094fab"
-                  style="position: absolute; left: 0px; top: 0px; visibility: hidden;"
-                >
-                  <img
-                    src="https://nmas.nowmedia.co.za/www/delivery/lg.php?bannerid=21371&amp;campaignid=18380&amp;zoneid=559&amp;loc=https%3A%2F%2Fwww.travelnews.co.za%2F&amp;referer=https%3A%2F%2Fwww.google.com%2F&amp;cb=dcea094fab"
-                    width="0"
-                    height="0"
-                    alt=""
-                    style="width: 0px; height: 0px;"
-                  />
-                </div></ins
-              >
-            </div>
-          </div>
+    {#if !loading}
+      {#each promotions as promotions}
+        <div id="topadd">
+          <img id="topaddimage" src={promotions.image} alt="img" />
         </div>
-      </div>
-    </div>
+      {/each}
+    {:else}
+      <div>loading...</div>
+    {/if}
   </div>
   <div class="main">
     <div id="blogcontainer">
@@ -142,7 +127,7 @@
         {#each blogs as blog}
           <div id="blogs">
             <div id="blogimagesblock">
-              <img id="image" src={blog.blog_bg} alt="img" />
+              <img id="images" src={blog.blog_bg} alt="img" />
             </div>
             <div id="content1">{blog.title}</div>
             <div id="content2">{blog.author}</div>
@@ -271,23 +256,23 @@
     background-color: rgb(157, 157, 157);
   }
 
-  #blogright {
-    display: flex;
-    justify-items: end;
-    width: 30%;
-  }
   #blogcontainer {
     width: 50%;
     height: 120px;
   }
 
-  #image {
+  #topaddimage {
+    border-radius: 10px;
+  }
+
+  #images {
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
     border-radius: 10px;
   }
+
   #content1 {
     width: 70%;
     margin-top: 15px;
@@ -303,7 +288,7 @@
     margin-top: 15px;
   }
 
-  #image:hover {
+  #images:hover {
     transform: scale(1.1);
     transition: transform 0.2s;
   }
