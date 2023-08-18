@@ -150,7 +150,7 @@
           </div>
         {/each}
       {:else}
-        <div>loading</div>
+        <div>loading...</div>
       {/if}
     </div>
     <div class="rightside">
