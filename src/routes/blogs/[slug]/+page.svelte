@@ -1,13 +1,20 @@
 <script>
-  import { onMount } from "svelte";
-  import { supabase } from "../lib/supabase/supabaseCLient";
+  import { page } from "$app/stores";
 
-  let blogs = [];
+  const id = $page.url.pathname.substr($page.url.pathname.lastIndexOf("/") + 1);
+
+  import { onMount } from "svelte";
+  import { supabase } from "../../../lib/supabase/supabaseCLient";
+
+  let blog;
   let loading = true;
 
   const fetchBlogs = async () => {
     try {
-      const { data, error } = await supabase.from("blogs").select("*");
+      const { data, error } = await supabase
+        .from("blogs")
+        .select("*")
+        .eq("id", id);
 
       if (error) {
         throw new Error(error.message);
@@ -21,7 +28,7 @@
 
   onMount(async () => {
     await fetchBlogs().then((data) => {
-      blogs = data;
+      blog = data[0];
       loading = false;
     });
   });
@@ -53,8 +60,8 @@
 <title>Travel News</title>
 
 <body class="body">
+  <link rel="stylesheet" type="text/css" href="/style.css" />
   <script src="BlogCard.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css" />
   <header id="header">
     <div id="maintop">
       <div id="top">
@@ -121,19 +128,15 @@
       <div>loading...</div>
     {/if}
   </div>
+
   <div class="main">
-    <div id="blogcontainer" onclick="myFunction()">
+    <div id="blogcontainer">
       {#if !loading}
-        {#each blogs as blog}
-          <a href={`/blogs/${blog.id}`} id="blogs">
-            <div id="blogimagesblock">
-              <img id="images" src={blog.blog_bg} alt="img" />
-            </div>
-            <div id="content1">{blog.title}</div>
-            <div id="content2">{blog.author}</div>
-            <div id="content3">{blog.category}</div>
-          </a>
-        {/each}
+        <div id="blogtitle">{blog.title}</div>
+        <img id="blogimage" src={blog.blog_bg} alt="img" height="320px" />
+        <div>{blog.blog_content}</div>
+        <div>{blog.author}</div>
+        <div>{blog.category}</div>
       {:else}
         <div>loading...</div>
       {/if}
@@ -155,7 +158,7 @@
 
       <iframe
         class="add4"
-        src="images/tn-flight-centre-independent-mini-branded-ftr-2-aug-2023-cover.png"
+        src="/images/tn-flight-centre-independent-mini-branded-ftr-2-aug-2023-cover.png"
         title="add4"
         scrolling="no"
       />
@@ -243,17 +246,8 @@
     justify-content: center;
   }
 
-  #blogs {
-    max-height: 100px;
-    display: flex;
-    background-color: #dee2e6;
-    padding: 0px;
+  #blogimage {
     margin: 10px;
-    border-radius: 10px;
-  }
-
-  #blogs:hover {
-    background-color: rgb(157, 157, 157);
   }
 
   #blogcontainer {
@@ -261,47 +255,12 @@
     height: 600px;
   }
 
-  #blogcontainer a {
-    text-decoration: none;
-    color: black;
+  #blogtitle {
+    font-size: 40px;
+    margin: 10px;
   }
 
   #topaddimage {
-    border-radius: 10px;
-  }
-
-  #images {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    border-radius: 10px;
-  }
-
-  #content1 {
-    width: 70%;
-    margin-top: 15px;
-  }
-
-  #content2 {
-    width: 10%;
-    margin-top: 15px;
-  }
-
-  #content3 {
-    width: 10%;
-    margin-top: 15px;
-  }
-
-  #images:hover {
-    transform: scale(1.1);
-    transition: transform 0.2s;
-  }
-  #blogimagesblock {
-    width: 20%;
-    height: 100px;
-    overflow: hidden;
-    margin: 0px;
     border-radius: 10px;
   }
 
@@ -492,10 +451,6 @@
 
     #blogcontainer {
       width: 70%;
-    }
-
-    #blogs {
-      font-size: medium;
     }
   }
 </style>

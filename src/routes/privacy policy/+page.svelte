@@ -1,59 +1,60 @@
-
-<title>Travel Info</title>
+<title>Privacy Policy</title>
 
 <body class="body">
-    
-<link rel="stylesheet" type= "text/css" href="style.css">
-
-<header class="header">  
-    <div class = "maintop">
-            <div class = "top">
-
-                    <div class = "topnav">  
-
-                         <a href="/"><img class = "logo" src = "/images/travellogo.webp" alt = "logo"></a>
-                    </div>
-                                <div class = "topnavend">
-                                    <ul>
-                                        <li class = "social1"><a href="/"><img class = "socialpics" src = "/images/facebook.png" alt = "facebook"></a></li>
-                                        <li class = "social2"><a href="/"><img class = "socialpics" src = "/images/twitter.png" alt = "twitter"></a></li>
-                                        <li class = "search"><a href="/"><img class = "socialpics" src = "/images/search.png" alt = "search"></a></li>
-                                    </ul>
-                                </div>
-            </div>
-                                    
-                    <div class = "topright">
-                             <a href= "/" class = "sub">Subscribe (Free)</a>
-                    </div>
-
-                    <div class="ham" onclick="toggleClass()">
-                        <h1>&#9776;</h1>
-                    </div>
-     </div>
-
-        <div class="bottom">
-                 <nav class="navbar">
-                        <ul>
-                                <li class = "navit"><a href = "/" class="navitem">News</a></li>
-                                <li ><a href = "/" class="navitem">Features</a></li>
-                                <li><a href = "/features" class="navitem">Travelinfo</a></li>
-                                <li><a href = "/" class="navitem">Columns</a></li>
-                                <li><a href = "/" class="navitem">Community</a></li>
-                                <li><a href = "/" class="navitem">Sponsored</a></li>
-                                <li><a href = "/" class="navitem">Contact Us</a></li>
-                        </ul>
-                 </nav>
+  <script src="BlogCard.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <header id="header">
+    <div id="maintop">
+      <div id="top">
+        <div id="topnav">
+          <a href="/"
+            ><img id="logo" src="/images/travellogo.webp" alt="logo" /></a
+          >
         </div>
-        
+        <div id="topnavend">
+          <ul>
+            <a href="https://facebook.com"
+              ><img
+                id="socialpics"
+                src="/images/facebook.png"
+                alt="facebook"
+              /></a
+            >
+            <a href="https://twitter.com"
+              ><img
+                id="socialpics"
+                src="/images/twitter.png"
+                alt="twitter"
+              /></a
+            >
+            <a href="/"
+              ><img id="socialpics" src="/images/search.png" alt="search" /></a
+            >
+          </ul>
+        </div>
+      </div>
 
+      <div id="topright">
+        <a href="/" id="sub">Subscribe Free</a>
+      </div>
 
-    
-</header>
+      <div class="ham" onclick="toggleClass()">
+        <h1>&#9776;</h1>
+      </div>
+    </div>
 
-<h1></h1>
-
-
-<script src = "dropdown.js"></script>
+    <div id="bottom">
+      <nav id="navbar">
+        <ul>
+          <li class="navit"><a href="/" id="navitem">News</a></li>
+          <li><a href="/features" id="navitem">Features</a></li>
+          <li><a href="/travelinfo" id="navitem">Travelinfo</a></li>
+          <li><a href="/columns" id="navitem">Columns</a></li>
+          <li><a href="/community" id="navitem">Community</a></li>
+          <li><a href="/sponsored" id="navitem">Sponsored</a></li>
+          <li><a href="/contact us" id="navitem">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 </body>
-
-
