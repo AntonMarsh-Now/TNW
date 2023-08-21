@@ -258,7 +258,6 @@
 
   #blogcontainer {
     width: 50%;
-    height: 600px;
   }
 
   #blogcontainer a {
