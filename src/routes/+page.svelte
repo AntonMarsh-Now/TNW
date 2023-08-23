@@ -300,7 +300,7 @@
     transition: transform 0.2s;
   }
   #blogimagesblock {
-    width: 20%;
+    width: 30%;
     height: 100px;
     overflow: hidden;
     margin: 0px;

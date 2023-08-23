@@ -104,7 +104,11 @@
       {#if !loading}
         <div id="blogtitle">{blog.title}</div>
         <img id="blogimage" src={blog.blog_bg} alt="img" height="320px" />
-        <div>{blog.blog_content}</div>
+        <div>
+          {#each blog.blog_content.split("\n") as paragraph}
+            <div class="para">{paragraph}</div>
+          {/each}
+        </div>
         <div>{blog.author}</div>
         <div>{blog.category}</div>
       {:else}
@@ -202,4 +206,7 @@
 </body>
 
 <style>
+  .para {
+    margin-bottom: 20px;
+  }
 </style>
