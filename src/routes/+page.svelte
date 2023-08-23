@@ -246,14 +246,13 @@
   #blogs {
     max-height: 100px;
     display: flex;
-    background-color: #dee2e6;
+    background-color: none;
     padding: 0px;
     margin: 10px;
-    border-radius: 10px;
   }
 
   #blogs:hover {
-    background-color: rgb(157, 157, 157);
+    background-color: #e9e9e9;
   }
 
   #blogcontainer {
@@ -269,7 +268,7 @@
   }
 
   #topaddimage {
-    border-radius: 10px;
+    border-radius: 0px;
   }
 
   #images {
@@ -277,7 +276,7 @@
     height: 100%;
     margin: 0px;
     padding: 0px;
-    border-radius: 10px;
+    border-radius: 0px;
   }
 
   #content1 {
@@ -300,11 +299,11 @@
     transition: transform 0.2s;
   }
   #blogimagesblock {
-    width: 30%;
+    width: 25%;
     height: 100px;
     overflow: hidden;
     margin: 0px;
-    border-radius: 10px;
+    border-radius: 0px;
   }
 
   .add4 {
