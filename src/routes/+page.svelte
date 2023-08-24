@@ -1,6 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import { supabase } from "../lib/supabase/supabaseCLient";
+  let count = 10;
 
   let blogs = [];
   let loading = true;
@@ -124,7 +125,7 @@
   <div class="main">
     <div id="blogcontainer" onclick="myFunction()">
       {#if !loading}
-        {#each blogs as blog}
+        {#each blogs.slice(0, count) as blog}
           <a href={`/blogs/${blog.id}`} id="blogs">
             <div id="blogimagesblock">
               <img id="images" src={blog.blog_bg} alt="img" />
@@ -137,6 +138,14 @@
       {:else}
         <div>loading...</div>
       {/if}
+
+      <button
+        class="button"
+        on:click={() => {
+          count += count;
+        }}
+        >load more
+      </button>
     </div>
     <div class="rightside">
       <div class="featuresblock">
@@ -182,7 +191,6 @@
       />
     </div>
   </div>
-
   <div class="footer">
     <div class="leftfoot">
       <ul>
@@ -220,7 +228,11 @@
         <li><a href="/">About Us</a></li>
         <li><a href="/">Advertise</a></li>
         <li><a href="/">Send us News</a></li>
-        <li><a href="https://tnw-cms.vercel.app/"> Admin Portal</a></li>
+        <li>
+          <a href="https://tnw-cms.vercel.app/" target="_blank">
+            Admin Portal</a
+          >
+        </li>
       </ul>
     </div>
   </div>
@@ -258,8 +270,8 @@
   #blogcontainer {
     width: 50%;
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-end;
+    flex-direction: column;
+    height: auto;
   }
 
   #blogcontainer a {
@@ -304,6 +316,7 @@
     overflow: hidden;
     margin: 0px;
     border-radius: 0px;
+    overflow: hidden;
   }
 
   .add4 {
@@ -471,6 +484,21 @@
   .rightfoot ul li:hover {
     background-color: #90c2f1;
     color: white;
+  }
+
+  .button {
+    margin: 20px 0px;
+    width: 100%;
+    border: none;
+    background-color: #75797c;
+    border-color: #545b62;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .button:hover {
+    background-color: #545b62;
   }
 
   @media only screen and (max-width: 900px) {

@@ -111,6 +111,9 @@
         </div>
         <div>{blog.author}</div>
         <div>{blog.category}</div>
+        <div>
+          <img id="bloggallery" src={blog.images} alt="img" height="250px" />
+        </div>
       {:else}
         <div>loading...</div>
       {/if}
@@ -197,7 +200,11 @@
         <li><a href="/">About Us</a></li>
         <li><a href="/">Advertise</a></li>
         <li><a href="/">Send us News</a></li>
-        <li><a href="https://tnw-cms.vercel.app/"> Admin Portal</a></li>
+        <li>
+          <a href="https://tnw-cms.vercel.app/" target="_blank">
+            Admin Portal</a
+          >
+        </li>
       </ul>
     </div>
   </div>
@@ -208,5 +215,9 @@
 <style>
   .para {
     margin-bottom: 20px;
+  }
+
+  #bloggallery {
+    margin: 50px 2px;
   }
 </style>
