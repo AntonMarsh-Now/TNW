@@ -444,6 +444,7 @@
     align-self: center;
     padding: 10px 10px;
     border: 0px;
+    font-weight: 600;
   }
   .rightfoot ul li a {
     text-decoration: none;
