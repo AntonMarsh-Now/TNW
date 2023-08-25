@@ -112,7 +112,7 @@
         <div>{blog.author}</div>
         <div>{blog.category}</div>
         <div>
-          <img id="bloggallery" src={blog.images} alt="img" height="250px" />
+          <img id="bloggallery" src={blog.images} alt="" height="250px" />
         </div>
       {:else}
         <div>loading...</div>
@@ -148,18 +148,20 @@
           alt="img"
         />
       </div>
-      <iframe
-        class="add6"
-        src="https://nmas.nowmedia.co.za//www/images/b63f5a95a965a429999f87ee4afea613.jpg"
-        title="add6"
-        scrolling="no"
-      />
-      <iframe
-        class="add7"
-        src="https://nmas.nowmedia.co.za//www/images/d222b5b54b192349813e273160595df8.gif"
-        title="add7"
-        scrolling="no"
-      />
+      <div class="sticky">
+        <iframe
+          class="add6"
+          src="https://nmas.nowmedia.co.za//www/images/b63f5a95a965a429999f87ee4afea613.jpg"
+          title="add6"
+          scrolling="no"
+        />
+        <iframe
+          class="add7"
+          src="https://nmas.nowmedia.co.za//www/images/d222b5b54b192349813e273160595df8.gif"
+          title="add7"
+          scrolling="no"
+        />
+      </div>
     </div>
   </div>
 
@@ -219,5 +221,10 @@
 
   #bloggallery {
     margin: 50px 2px;
+  }
+
+  .sticky {
+    position: sticky;
+    top: 112px;
   }
 </style>

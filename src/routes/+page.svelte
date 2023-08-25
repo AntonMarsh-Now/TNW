@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import { supabase } from "../lib/supabase/supabaseCLient";
-  let count = 10;
+  let count = 13;
 
   let blogs = [];
   let loading = true;
@@ -99,7 +99,7 @@
     <div id="bottom">
       <nav id="navbar">
         <ul>
-          <li class="navit"><a href="/" id="navitem">News</a></li>
+          <li><a href="/" id="navitem">News</a></li>
           <li><a href="/features" id="navitem">Features</a></li>
           <li><a href="/travelinfo" id="navitem">Travelinfo</a></li>
           <li><a href="/columns" id="navitem">Columns</a></li>
@@ -177,18 +177,20 @@
           alt="img"
         />
       </div>
-      <iframe
-        class="add6"
-        src="https://nmas.nowmedia.co.za//www/images/b63f5a95a965a429999f87ee4afea613.jpg"
-        title="add6"
-        scrolling="no"
-      />
-      <iframe
-        class="add7"
-        src="https://nmas.nowmedia.co.za//www/images/d222b5b54b192349813e273160595df8.gif"
-        title="add7"
-        scrolling="no"
-      />
+      <div class="sticky">
+        <iframe
+          class="add6"
+          src="https://nmas.nowmedia.co.za//www/images/b63f5a95a965a429999f87ee4afea613.jpg"
+          title="add6"
+          scrolling="no"
+        />
+        <iframe
+          class="add7"
+          src="https://nmas.nowmedia.co.za//www/images/d222b5b54b192349813e273160595df8.gif"
+          title="add7"
+          scrolling="no"
+        />
+      </div>
     </div>
   </div>
   <div class="footer">
@@ -248,8 +250,8 @@
   }
 
   .topcontainer {
-    height: 100px;
-    padding-top: 130px;
+    height: 0px;
+    padding: 60px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -268,7 +270,7 @@
   }
 
   #blogcontainer {
-    width: 50%;
+    width: 54%;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -284,26 +286,30 @@
   }
 
   #images {
-    width: 100%;
+    width: fit-content;
     height: 100%;
     margin: 0px;
-    padding: 0px;
+    padding: 2px;
     border-radius: 0px;
   }
 
   #content1 {
     width: 70%;
-    margin-top: 15px;
+    margin-top: 5px;
+    margin-left: 15px;
+    color: #1d1e1f;
   }
 
   #content2 {
     width: 10%;
     margin-top: 15px;
+    color: #7c7d7d;
   }
 
   #content3 {
     width: 10%;
     margin-top: 15px;
+    color: #7c7d7d;
   }
 
   #images:hover {
@@ -311,7 +317,7 @@
     transition: transform 0.2s;
   }
   #blogimagesblock {
-    width: 25%;
+    width: 18%;
     height: 100px;
     overflow: hidden;
     margin: 0px;
@@ -322,7 +328,6 @@
   .add4 {
     margin: 0px;
     margin-top: 10px;
-
     width: 100%;
     height: 432px;
     overflow: hidden;
@@ -350,6 +355,11 @@
     height: 300px;
     overflow: hidden;
     aspect-ratio: auto 300/600;
+  }
+
+  .sticky {
+    position: sticky;
+    top: 112px;
   }
 
   .featuresblock {
@@ -411,6 +421,7 @@
 
   .rightend {
     width: 20%;
+    margin-left: 20px;
   }
 
   .footer {
@@ -425,12 +436,13 @@
     text-decoration: none;
     list-style: none;
     font-size: 12px;
+    margin-right: 100px;
   }
 
   .rightfoot ul li {
     margin: 0px;
     align-self: center;
-    padding: 10px 0px;
+    padding: 10px 10px;
     border: 0px;
   }
   .rightfoot ul li a {
@@ -445,13 +457,14 @@
   .leftfoot ul {
     display: flex;
     list-style: none;
-    margin: 0px;
+    margin-left: 100px;
     font-size: 12px;
   }
 
   .leftfoot ul li {
     margin: 0px;
-    padding: 10px 0px;
+    padding: 10px 20px;
+    font-weight: 600;
   }
   .leftfoot ul li a {
     text-decoration: none;
@@ -487,8 +500,8 @@
   }
 
   .button {
-    margin: 20px 0px;
-    width: 100%;
+    margin: auto;
+    width: 95%;
     border: none;
     background-color: #75797c;
     border-color: #545b62;
@@ -496,6 +509,7 @@
     padding: 10px;
     border-radius: 8px;
     cursor: pointer;
+    margin-bottom: 40px;
   }
   .button:hover {
     background-color: #545b62;

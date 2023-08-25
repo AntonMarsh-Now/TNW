@@ -12,15 +12,13 @@ window.onscroll = function() {
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-     document.getElementById("bottom").style.height = "30px";
+     document.getElementById("bottom").style.height = "28px";
      document.getElementById("logo").style.height = "50px";
-     document.getElementById("bottom li").style.height = "10px";
-     document.getElementById("navitem").style.height = "10px";
+     document.getElementById("").style.fontSize = "14px";
 
   } else {
-     document.getElementById("bottom").style.height = "40px";
+     document.getElementById("bottom").style.height = "31px";
      document.getElementById("logo").style.height = "60px";
-     document.getElementById("bottom li").style.height = "30px";
-     document.getElementById("navitem").style.height = "10px";
+     document.getElementById("navitem").style.fontSize = "16.5px";
   }
 }

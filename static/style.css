@@ -1,13 +1,20 @@
 * { 
-    margin : 0px 15px;
+    margin : 0px 0px;
     padding-top: 0px;
 }
+
 
 .body{
     font-family: "Gill Sans", sans-serif;
 }
 
+
+.main{
+    margin: 0px 100px;
+}
+
 #logo{
+    padding-left: 120px;
     height: 60px;
     padding-top: 10px;
 }
@@ -15,8 +22,9 @@
 
 
 #socialpics{
+
     height:20px;
-    padding:8px;
+    padding:10px;
     border-radius: 14px;
     
 }
@@ -83,14 +91,14 @@ align-self: center;
 
 
 #topright{
+    padding-left: 10px;
     display: flex;
     justify-content: space-between;
-    width: 9%;
+    width: 110px;
     margin:0px;
     height: 80px;
     background-color: #c8221d;
     font-size: 14px;
-
 }
 
 #navbar{
@@ -114,8 +122,8 @@ align-self: center;
     
     background-color: none;
     margin-top: 0px;
-    padding-top: 10px;
-    height:30px;
+    padding-top: 6px;
+    height:25px;
     width: 120px;
     text-align: center;
     margin-left: 0px;
@@ -140,12 +148,11 @@ align-self: center;
 
 
 #bottom{
+    margin:auto;
     display: flex;
-    margin-left: 0px;
-    margin-top: 0px;
     box-shadow: 1px 1px 4px 1px gray;
-    height:40px;
-    width: 93.1%;
+    height:31px ;
+    width: 100%
 }
 
 
@@ -159,10 +166,19 @@ align-self: center;
 }
 
 #header{
-    position:fixed;
+    position:sticky;
     width:100%;
     background-color: white;
     padding-top: 0px;
+    top:0px;
+    z-index: 999;
+}
+
+
+
+@media only screen and (max-width: 1300px){
+    .main{margin: 0px 10px;
+    }
 }
 
 
@@ -186,9 +202,6 @@ align-self: center;
 }
 
 
-.topnavend{
-    
-}
 
 .ham{
     display:flex;
@@ -262,7 +275,7 @@ flex-direction:column;
     }
    }
     
-    }
+}
 
 @media(min-width:769px){
 
