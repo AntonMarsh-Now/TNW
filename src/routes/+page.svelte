@@ -93,7 +93,7 @@
 
       <div class="backlink">
         <a href="https://go4itafrica.com"
-          ><img src="/images/back.png" alt="" /></a
+          ><img src="images/back.png" alt="" /></a
         >
       </div>
 
