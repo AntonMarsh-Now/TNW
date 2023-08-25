@@ -91,6 +91,12 @@
         <a href="/" id="sub">Subscribe Free</a>
       </div>
 
+      <div class="backlink">
+        <a href="https://go4itafrica.com"
+          ><img src="/images/back.png" alt="" /></a
+        >
+      </div>
+
       <div class="ham" onclick="toggleClass()">
         <h1>&#9776;</h1>
       </div>
@@ -514,6 +520,10 @@
   }
   .button:hover {
     background-color: #545b62;
+  }
+
+  .backlink a {
+    cursor: default;
   }
 
   @media only screen and (max-width: 900px) {
