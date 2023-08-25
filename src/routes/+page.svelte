@@ -90,13 +90,11 @@
       <div id="topright">
         <a href="/" id="sub">Subscribe Free</a>
       </div>
-
-      <div class="backlink">
+      <div class="back">
         <a href="https://go4itafrica.com"
-          ><img src="images/back.png" alt="" /></a
+          ><img src="/images/back.png" alt="" /></a
         >
       </div>
-
       <div class="ham" onclick="toggleClass()">
         <h1>&#9776;</h1>
       </div>
@@ -522,7 +520,7 @@
     background-color: #545b62;
   }
 
-  .backlink a {
+  .back a {
     cursor: default;
   }
 
