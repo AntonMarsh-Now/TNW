@@ -14,9 +14,9 @@
   }
 
   #blogimage {
-    margin: 10px;
+    margin: 10px 10px;
+    margin-left: 0px;
   }
-
   #blogcontainer {
     width: 54%;
   }
@@ -24,10 +24,16 @@
   #blogtitle {
     font-size: 40px;
     margin: 10px;
+    margin-left: 0px;
   }
 
   #topaddimage {
     border-radius: 10px;
+  }
+
+  .advert{
+    padding: 10px 40px;
+
   }
 
   .add4 {

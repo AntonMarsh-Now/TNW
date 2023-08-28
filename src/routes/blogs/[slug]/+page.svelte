@@ -103,13 +103,16 @@
     <div id="blogcontainer">
       {#if !loading}
         <div id="blogtitle">{blog.title}</div>
+        <div>{blog.author}</div>
         <img id="blogimage" src={blog.blog_bg} alt="img" height="320px" />
         <div>
+          <div class="advert">
+            <img src="/images/advert.gif" alt="advert" />
+          </div>
           {#each blog.blog_content.split("\n") as paragraph}
             <div class="para">{paragraph}</div>
           {/each}
         </div>
-        <div>{blog.author}</div>
         <div>{blog.category}</div>
         <div>
           <img id="bloggallery" src={blog.images} alt="" height="250px" />

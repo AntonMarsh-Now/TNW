@@ -172,6 +172,24 @@
         title="add4"
         scrolling="no"
       />
+      <div class="column">
+        <div class="columnlink">
+          <h4>column</h4>
+        </div>
+        <div class="columninfo">
+          <div class="columntext">
+            <h3>world turns to purpose-driven travel</h3>
+          </div>
+          <div class="columnpicblock">
+            <img
+              class="columnpic"
+              src="/images/clintonelsintrepid.jpg"
+              alt="clinton"
+            />
+            <h4>Clinton Els</h4>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="rightend">
@@ -417,7 +435,40 @@
     color: red;
     font-weight: 700;
   }
+  .column {
+    position: sticky;
+    top: 120px;
+  }
+  .columnlink {
+    background-color: #dee2e6;
+    color: #00498f;
+    padding: 5px 0px;
+    margin-top: 10px;
+  }
 
+  .columnpic {
+    width: 100px;
+    height: 140px;
+    margin: 3px;
+  }
+  .columnpicblock {
+    border-left: 1px solid black;
+    margin-top: 10px;
+    color: #00498f;
+  }
+  .columntext {
+    align-self: center;
+  }
+
+  .columninfo {
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .columninfo:hover {
+    background-color: #e1e3e6;
+  }
   .rightside {
     background-color: none;
     width: 20%;
