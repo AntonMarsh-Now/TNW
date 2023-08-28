@@ -350,6 +350,11 @@
     overflow: hidden;
   }
 
+  #socialpics {
+    height: 20px;
+    padding: 10px;
+    border-radius: 14px;
+  }
   .add4 {
     margin: 0px;
     margin-top: 10px;
