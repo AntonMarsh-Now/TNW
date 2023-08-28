@@ -8,7 +8,10 @@
 
   const fetchBlogs = async () => {
     try {
-      const { data, error } = await supabase.from("blogs").select("*");
+      const { data, error } = await supabase
+        .from("blogs")
+        .select("*")
+        .order("id", { ascending: false });
 
       if (error) {
         throw new Error(error.message);
