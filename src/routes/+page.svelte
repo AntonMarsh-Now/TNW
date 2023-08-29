@@ -171,7 +171,7 @@
 
       <iframe
         class="add4"
-        src="images/tn-flight-centre-independent-mini-branded-ftr-2-aug-2023-cover.png"
+        src="/images/tn-family-travel-23-august-2023-cover.png"
         title="add4"
         scrolling="no"
       />
